@@ -39,7 +39,7 @@ public class AutoTotemClient implements ClientModInitializer {
                     if (p.getInventory().getStack(i).isOf(Items.TOTEM_OF_UNDYING)) {
                         client.interactionManager.clickSlot(
                                 syncId, i, HOTBAR_INDEX, SlotActionType.SWAP, p);
-                        cooldown = 2;
+                        cooldown = 4;
                         return;
                     }
                 }
